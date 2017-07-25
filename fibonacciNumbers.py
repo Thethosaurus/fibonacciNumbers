@@ -1,5 +1,5 @@
-
 userInput = int(raw_input("How many fibonacci numbers would you like to see? "))
+
 def fibonacciNumbers(n):
     fibonacci = [1, 1]
     nPLace = [1,2]
@@ -8,8 +8,9 @@ def fibonacciNumbers(n):
         oneBackNumber = fibonacci[i]
         newNumber = twoBackNumber + oneBackNumber
         fibonacci.append(newNumber)
-        nPLace.append(i+3)
+        nPLace.append(i+2)
         i += 1
+    print nPLace
     return fibonacci
 
 print fibonacciNumbers(userInput);
